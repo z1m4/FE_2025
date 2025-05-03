@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+#spinner {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#user-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-card {
+    position: relative;
+    width: 300px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.user-card:hover {
+    transform: scale(1.05);
+}
+
+.extra-info {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.user-buttons {
+    position: absolute;
+    top: -40px;
+    right: 10px;
+    display: flex;
+    gap: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.user-buttons button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.user-buttons button.delete-btn {
+    background: #dc3545;
+}
+
+button {
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.edit-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+#edit-panel {
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#edit-panel input {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#save-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+#cancel-btn {
+    background-color: #ccc;
+}
